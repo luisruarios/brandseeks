@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fictitious Marketing Agency</title>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl font-semibold">Welcome to Our Marketing Agency</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services" class="py-10 px-4">
+        <h2 class="text-2xl font-semibold">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="text-xl font-semibold">Service 1</h3>
+                <p class="mt-2">Description of service 1.</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="text-xl font-semibold">Service 2</h3>
+                <p class="mt-2">Description of service 2.</p>
+            </div>
+            <!-- Add more service cards as needed -->
+        </div>
+    </section>
+
+    <section id="testimonials" class="bg-gray-200 py-10 px-4">
+        <h2 class="text-2xl font-semibold">Testimonials</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            <div class="bg-white p-4 rounded shadow">
+                <img src="customer1.jpg" alt="Customer 1" class="w-12 h-12 rounded-full mx-auto">
+                <p class="mt-2">Customer 1's testimonial.</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <img src="customer2.jpg" alt="Customer 2" class="w-12 h-12 rounded-full mx-auto">
+                <p class="mt-2">Customer 2's testimonial.</p>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+    </section>
+
+    <section id="contact" class="py-10 px-4">
+        <h2 class="text-2xl font-semibold">Contact Us</h2>
+        <form id="contact-form" class="mt-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name:</label>
+                    <input type="text" id="name" name="name" required class="mt-1 p-2 border rounded-md w-full">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
+                    <input type="email" id="email" name="email" required class="mt-1 p-2 border rounded-md w-full">
+                </div>
+            </div>
+            <div class="mt-6">
+                <label for="message" class="block text-sm font-medium text-gray-700">Message:</label>
+                <textarea id="message" name="message" required class="mt-1 p-2 border rounded-md w-full"></textarea>
+            </div>
+            <div class="mt-6">
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="bg-blue-500 text-white text-center py-4">
+        <p>&copy; 2023 Fictitious Marketing Agency</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
