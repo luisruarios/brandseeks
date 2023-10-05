@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <title>Brandseeks - Fictitious Marketing Agency</title>
+
+  <!-- Basic meta info -->
+  <meta name="keywords"
+    content="marketing agency, brand strategy, creative campaigns, data-driven marketing, testimonials" />
+
+  <meta name="author" content="Luis Rua Rios - @luisruarios on GitHub" />
+
+  <meta name="description"
+    content="Brandseeks - Your go-to fictional marketing agency for expert brand strategy, creative campaigns, and data-driven marketing solutions. Check out our client testimonials." />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css"
+    href="hhttps://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css"
+    href="hhttps://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            green: '#2BE2A0',
+            fadePink: '#cd21b3',
+            blue1: '#00ecec',
+            blue2: '#2f2a61'
+          },
+          backgroundImage: {
+            'herobg': "url('assets/img/stars-desktop.png')",
+            'brandbg': 'linear-gradient(to right, #0f0c29, #302b63, #24243e);',
+          },
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif']
+          },
+          width: {
+            'desktop-hero': '970px',
+            '814': '814px',
+
+          },
+          maxWidth: {
+            'desktop': '1440px',
+            'container': '970px'
+          },
+          fontSize: {
+            '84': '84px',
+            '40': '40px'
+          },
+          screens: {
+            '1xl': '1200px',
+            'tablet-md': '900px',
+            'md': '850px',
+            'sm': '640px',
+            'xs': '400px',
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-brandbg font-poppins tracking-tighter">
+
+  <!-- sidebar -->
+  <div class="fixed z-50 min-h-screen lg:hidden shadow-2xl ease-out ">
+    <!-- sidebar -->
+    <div id="parent" class="side-bar flex justify-end w-screen space-y-6
+        absolute inset-y-0 left-0 transform translate-x-full transition
+        duration-200 ease-in-out ">
+
+      <div id="child" class="bg-white w-1/2 min-h-screen">
+        <!-- nav -->
+        <nav class="flex items-center justify-between flex-wrap">
+          <div class="text-darkblue text-right flex
+              justify-end
+              w-full items-start flex flex-col ">
+
+            <div class="mobile-menu-button z-50 flex justify-end w-full
+                items-center pb-3 pt-4
+                transition duration-200 font-semibold">
+
+              <div class="flex flex-row items-center">
+                <a class="w-4/5 mx-auto" href="#welcome">
+                  <img src="./assets/img/logo-b.png" alt="image" />
+                </a>
+              </div>
+            </div>
+
+            <a href="#welcome" class=" mobile-menu-button w-full hover:bg-secondary
+                hover:text-fadePink pr-8 sm:pr-10 transition duration-200
+                py-4
+                pr-4 font-semibold">
+              Home
+            </a>
+            <a href="#services" class=" mobile-menu-button w-full hover:bg-secondary
+                hover:text-fadePink pr-8 sm:pr-10 transition duration-200
+                py-4
+                pr-4 font-semibold">
+              Services
+            </a>
+            <a href="#testimonials" class="mobile-menu-button w-full hover:bg-secondary
+                hover:text-fadePink pr-8 sm:pr-10 transition duration-200
+                py-4
+                pr-4 font-semibold">
+              Testimonials
+            </a>
+            <a href="#contact" class="mobile-menu-button w-full hover:bg-secondary
+                hover:text-fadePink pr-8 sm:pr-10 transition duration-200
+                py-4
+                pr-4 font-semibold">
+              Contact us
+            </a>
+            </a>
+
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- navigation section start -->
+  <div class="desktop-navigation h-20 w-full flex items-center
+      justify-center">
+    <div class="h-16 w-full ml-0 md:ml-14 mr-10 bg-transparent max-w-desktop
+        mx-auto">
+      <div class="flex items-center justify-between ">
+        <div class="block md:hidden">
+          <button class=" mobile-menu-button z-50 flex items-center px-6 py-2
+              text-secondary border-blue-700 hover:text-blue-700
+              hover:border-blue-700">
+
+            <svg class="fill-white h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+
+              <title class="text-teal-200 border-teal-400 hover:text-white
+                  hover:border-white">Menu</title>
+
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+
+          </button>
+        </div>
+        <!-- logo -->
+        <a href="#">
+          <img src="assets/img/logo.png" alt="brandseeks" class="logo w-60
+                h-16
+                bg-green-200 object-contain">
+        </a>
+        <div class="px-6 py-2 md:hidden"></div>
+        <!-- nav items -->
+        <nav class="font-semibold text-base hidden lg:block">
+          <a href="#services" class="text-white mx-4 transition-all duration-500
+              hover:animate-pulse hover:text-fadePink">Services</a>
+          <a href="#testimonials" class="text-white mx-4 transition-all duration-500
+              hover:animate-pulse hover:text-fadePink">Testimonials</a>
+          <a href="#contact" class="text-blue1 mx-2 p-3 border border-blue1
+                bg-transparent  transition-all duration-500
+                border-2 rounded-lg hover:bg-fadePink
+                hover:border-white hover:text-white
+                ">Contact Us</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- hero section start -->
+  <div id="hero" class="hero-section h-max w-full flex items-center">
+    <div class="h-max w-full max-w-desktop mx-auto flex justify-center
+          font-semibold text-white mt-9">
+      <div class="hero w-full ml-5 mr-5 sm:ml-14 sm:mr-10
+            lg:w-desktop-hero
+            relative" data-aos="fade-up" data-aos-duration="1000">
+        <img class="hidden sm:block absolute w-full object-scale-down
+              animate-pulse" src="assets/img/stars-desktop.png" alt="" />
+        <img class="block sm:hidden absolute w-full object-scale-down
+              object-top animate-pulse" src="assets/img/mobile-stars.png" alt="" />
+
+        <!-- first header line -->
+        <div class="first-line mt-7 z-20 flex w-full relative my-0
+              md:my-7
+              text-40
+              sm:text-6xl md:text-7xl
+              lg:text-84">
+          <h1 class="ml-9 sm:ml-4">Boost</h1>
+          <img class="absolute left-36 sm:left-48 md:left-56 lg:left-64
+                w-28 hover:translate-x-6 delay-100 transition-all duration-700
+                pointer sm:w-3/12 top-4 sm:top-2 ml-2" src="assets/img/cilindric-figure.svg" alt="" />
+
+        </div>
+        <!-- second header line -->
+        <div class="second-line z-10 flex justify-center
+              md:justify-start
+              w-full md:w-814 lg:w-full lg:w-full relative
+              text-4xl sm:text-6xl md:text-7xl lg:text-84">
+
+          <img class="hidden md:block absolute top-20 left-20 w-24 lg:w-28 md:left-28
+              lg:top-24 lg:left-36 hover:translate-x-8 transition-all duration-700" src="assets/img/tree-figure.svg"
+            alt="" />
+
+          <h1 class="ml-20 xs:ml-0 md:pl-40 mr-0 z-20 sm:mr-20">Your
+            brand's</h1>
+
+          <img class="hidden md:block absolute -top-4 lg:-top-8 right-16 lg:right-28
+                w-32 hover:scale-110 transition-all lg:w-40
+                duration-500" src="assets/img/square-figures.svg" alt="" />
+        </div>
+        <!-- third header line -->
+        <div class="third-line flex justify-end w-full relative my-0
+              text-4xl sm:text-6xl md:text-7xl lg:text-84">
+          <h1 class="mr-10 sm:mr-16 z-20 my-0">growth journey</h1>
+        </div>
+
+        <!-- header paragraph-->
+        <p class="font-normal tracking-normal w-11/12
+            text-center
+            text-base md:text-xl my-20
+            mx-auto"><span class="font-semibold">Welcome</span>
+          to Brandseeks, the ficticious marketing agency designed for assessment purposes. Our imaginary team of
+          experts is here to help you explore the world of marketing strategy and creativity. Dive into our virtual
+          world and discover how we craft innovative campaigns. Please note, we're purely fictional.🙌</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Services section -->
+  <section id="services" class="py-10 px-4">
+    <div class="max-w-container mx-auto">
+      <h2 class="text-4xl text-center font-semibold text-white">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+        <div class="bg-white p-4 rounded shadow text-center text-white bg-indigo-400 cursor-pointer duration-300
+        rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-white py-10
+        hover:scale-105 animation-all">
+          <h3 class="text-2xl font-semibold pb-6">Brand Strategy</h3>
+          <p class="mt-2 text-xl">Unlock your brand's potential with expert analysis of market trends, competitors, and
+            consumer
+            behavior.</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center text-white bg-indigo-400 cursor-pointer duration-300
+        rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-white py-10
+        hover:scale-105 animation-all">
+          <h3 class="text-2xl font-semibold  pb-6">Creative Campaigns</h3>
+          <p class="mt-2 text-xl">Elevate your brand's story with imaginative ad campaigns and captivating social media
+            strategies.</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow text-center text-white bg-indigo-400 cursor-pointer duration-300
+        rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-white py-10
+        hover:scale-105 animation-all">
+          <h3 class="text-2xl font-semibold  pb-6">Data-Driven Marketing</h3>
+          <p class="mt-2 text-xl">Optimize your online presence for higher website traffic, conversions, and ROI using
+            the power
+            of data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials section -->
+  <section id="testimonials" class="bg-transparent py-10 px-4">
+    <div class="max-w-container mx-auto">
+      <h2 class="text-4xl text-center font-semibold text-white">Testimonials</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 ">
+        <div class="bg-white p-4 rounded rounded-lg shadow-lg flex flex-col justify-center items-center">
+          <img
+            src="assets/img/client-1.jpg"
+            alt="Customer 1" class="w-48 h-48 object-cover rounded-full mx-auto mt-4 border border-blue2 border-4">
+          <p class="mt-8 text-center text-gray-700">"Brandseeks has been instrumental in shaping our brand's success.
+            Their strategic insights have truly made a difference."</p>
+          <p class="mt-2 text-center font-bold text-xl text-blue2 py-4">- John Doe</p>
+        </div>
+        <div class="bg-white p-4 rounded rounded-lg shadow-lg flex flex-col justify-center items-center">
+          <img
+            src="assets/img/client-2.jpg"
+            alt="Customer 2" class="w-48 h-48 object-cover rounded-full mx-auto mt-4 border border-blue2 border-4">
+          <p class="mt-8 text-center text-gray-700">"Working with Brandseeks has been a game-changer for us. Their
+            creative campaigns have boosted our brand's visibility and engagement."</p>
+          <p class="mt-2 text-center font-bold text-xl text-blue2 py-4">- Emily Davis</p>
+        </div>
+        <div class="bg-white p-4 rounded rounded-lg shadow-lg flex flex-col justify-center items-center">
+          <img
+            src="assets/img/client-3.jpg"
+            alt="Customer 2" class="w-48 h-48 object-cover rounded-full mx-auto mt-4 border border-blue2 border-4">
+          <p class="mt-8 text-center text-gray-700">"Brandseeks exceeded our expectations with their data-driven
+            marketing strategies. They helped us achieve remarkable results."</p>
+          <p class="mt-2 text-center font-bold text-xl text-blue2 py-4">- John Smith</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="py-16 px-4">
+    <div class="max-w-container mx-auto bg-indigo-400 cursor-pointer duration-300
+    rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-white p-10">
+      <h2 class="text-4xl text-center font-semibold text-white">Contact Us</h2>
+      <form id="contact-form" class="mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="name" class="block text-xl font-medium text-white">Name:</label>
+            <input type="text" id="name" name="name" required class="mt-1 p-2 border rounded-md w-full">
+          </div>
+          <div>
+            <label for="email" class="block text-xl font-medium text-white">Email:</label>
+            <input type="email" id="email" name="email" required class="mt-1 p-2 border rounded-md w-full">
+          </div>
+        </div>
+        <div class="mt-6">
+          <label for="message" class="block text-xl font-medium text-white">Message:</label>
+          <textarea id="message" name="message" required class="mt-1 p-2 border rounded-md w-full"></textarea>
+        </div>
+        <div class="mt-6">
+          <button type="submit" class="text-blue1 border p-3 border-blue1
+          bg-transparent  transition-all duration-500
+          border-2 rounded-lg hover:bg-fadePink
+          hover:border-white hover:text-white">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-fadePink text-white text-center py-4">
+    <p>&copy; 2023 Brandseeks - Fictitious Marketing Agency Created by: Luis Rua Rios</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="scripts.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
